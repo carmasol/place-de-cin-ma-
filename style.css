@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, Helveticaz, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #6c63ff;
+}
+
+h1 {
+    color: #f1f1f1;
+}
+
+h2 {
+    text-align: center;
+    color: #6c63ff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#cinema {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+#screen {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin:0 auto;
+    background: #000;
+    border-radius: 10px;
+    color: #f1f1f1;
+}
+
+#seats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 10px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0.2rem;
+}
+
+.seat.selected {
+    background: #6c63ff;
+
+}
+
+#selected-seats {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#status-message {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#btn-reserve {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-reserve:hover {
+    background: #534dff;
+}
+
+@media screen and (max-width: 480px) {
+    #cinema {
+        padding: 10px;
+    }
+
+    .seat {
+        width: 30px;
+        height: 30px;
+    }
+
+    #btn-reserve {
+        padding: 8px 16px;
+    }
+
+}
